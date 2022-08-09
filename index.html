@@ -6,27 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./imagenes/logo.jpg">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <title>Tu Super Heroe</title>
 </head>
 <body>
     <header class="header">
         <img src="./imagenes/logo tu superheroe favorito-02.png" alt="">
-        <nav class="grid__nav">
-            <ul>
-             <li><a href="">Inicio</a></li>
-             <li><a href="./productos/productos.html">Productos</a>
-                <ul>
-                    <li><a href="./productos/productos.html#buzos.con.mascara">Buzos con mascara</a></li>
-                    <li><a href="Buzos cuello redondo">Buzos cuello redondo</a></li>
-                    <li><a href="Buzos con capucha">Buzos con capucha</a></li>
-                    <li><a href="Camperas">Camperas</a></li>
-                    <li><a href="Camisetas">Camisetas</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="./productos/productos.html" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                   Productos
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="./productos/productos.html#buzos.con.mascara">Buzos con mascara</a></li>
+                    <li><a class="dropdown-item" href="./productos/productos.html#buzos.con.capucha">Buzos con capucha</a></li>
+                    <li><a class="dropdown-item" href="./productos/productos.html#buzos.cuello.redondo">Buzos cuello redondo</a></li>
+                    <li><a class="dropdown-item" href="./productos/productos.html#camperas.personajes">Camperas</a></li>
+                    <li><a class="dropdown-item" href="./productos/productos.html#camisetas.personajes">Camisetas</a></li>
+                  </ul>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#informacion.importante">Informacion</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./registrarse/registrarse.html">Registrarse</a>
+                  </li>
                 </ul>
-            </li>
-             <li><a href="#informacion.importante">Informacion</a></li>
-             <li><a href="./registrarse/registrarse.html">Registrarse</a></li>
-            </ul>
-        </nav>
+              </div>
+            </div>
+          </nav>
     </header>
     <div class="div__res">
        <p>Lo mas vendido</p>
@@ -47,7 +65,7 @@
     <a href="https://wa.me/c/5491151411081"><img src="./imagenes/WhatsApp.logo.png" alt=""></a>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.0254129924506!2d-58.479315084838674!3d-34.62879808045286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9923538a277%3A0x784aa78ee8246c8!2sConcordia%20321%2C%20C1407%20DIE%2C%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1656973739814!5m2!1sen!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </footer>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 
 </html>
