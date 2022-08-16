@@ -1,0 +1,152 @@
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+*{ box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+.header, .header nav ul li a {
+    color:black;
+} 
+header nav ul li{
+    background-color: red;
+    padding: 0.5rem;   
+    text-align: center;
+    display: inline-block;
+    border: red solid 0.2rem;
+    margin: 0 0.8rem 1rem 0.8rem
+    
+}
+header nav ul li:hover{
+    background-color: red;
+    color: black;
+}
+header img {
+    width: 100%;
+    height: 10%;
+
+}
+ul {
+    list-style: none;
+    font-size:0 /* truco por el uso de inline-block*/
+ }
+ li {
+    display: inline-block;
+    position:relative;
+    font-size: 14px
+ }
+ ul ul {
+    position: absolute;
+    display: none;
+ }
+ ul ul li {
+    display: block;
+ }
+ ul li:hover ul {
+    display:block;
+ }
+ 
+a{
+    text-decoration: none;
+}
+li {
+    color: black;
+    font-size:20px;
+
+}
+p {
+    color: black ;
+    font-size: 5rem;
+    font: weight 50rem; 
+    border: red solid 0.2rem;
+    text-align:center;
+    margin:1rem 0rem 0rem 0rem;
+  }
+  footer a img {
+    width: 20rem;
+    height:20rem ;
+
+  }
+  .grid__nav{
+    display: grid;
+    grid-template-columns:repeat(4 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+  }
+  .grid__loNuevo{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr;
+  }
+.grid__loMasVendido{
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr ;
+}
+.grid__ofertas{
+    display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr ;
+}
+.grid__buzosConMascara{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows:  1fr;
+}
+.grid__buzosConCapucha{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  1fr;
+}
+.grid__buzosCuelloRedondo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  1fr;
+}
+.grid__camperas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  1fr;
+}
+.grid__camisetas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  1fr;
+} 
+section img {
+    width: 100%;
+    height:40rem;
+  }
+
+@media only screen and (max-width:768px){
+    .grid__buzosConMascara{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+    }
+    .grid__buzosConCapucha{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows:  1fr 1fr;}
+    .grid__buzosCuelloRedondo{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows:  1fr 1fr;
+        }    
+    .grid__buzosCuelloRedondo{
+            display: grid;
+            grid-template-columns: 1fr  1fr;
+            grid-template-rows: 1fr 1fr;    }
+
+    .grid__camperas{
+                display: grid;
+                grid-template-columns: 1fr  1fr;
+                grid-template-rows:  1fr 1fr;
+            }
+    .grid__camisetas{
+                display: grid;
+                grid-template-columns:  1fr 1fr;
+                grid-template-rows:  1fr 1fr;
+            }        
+}
