@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imagenes/logo.jpg">
-    <link rel="stylesheet" href="../css/style2.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Tu Super Heroe Favorito</title>
 </head>
 <body>
@@ -28,11 +29,9 @@
                    Productos
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#buzos.con.mascara">Buzos con mascara</a></li>
-                    <li><a class="dropdown-item" href="#buzos.con.capucha">Buzos con capucha</a></li>
-                    <li><a class="dropdown-item" href="#buzos.cuello.redondo">Buzos cuello redondo</a></li>
-                    <li><a class="dropdown-item" href="#camperas.personajes">Camperas</a></li>
-                    <li><a class="dropdown-item" href="#camisetas.personajes">Camisetas</a></li>
+                    <li><a class="dropdown-item" href="#conMascara">Con mascara</a></li>
+                    <li><a class="dropdown-item" href="#buzos">Buzos</a></li>
+                    <li><a class="dropdown-item" href="#remeraPersonajes">Remeras</a></li>
                   </ul>
                 </li>
                   <li class="nav-item">
@@ -46,78 +45,296 @@
             </div>
           </nav>
     </header>
-        <p>Nuestros productos</p>
-    <p>Buzoscon mascara</p>
-   <div class="row">
-    <div id="carouselExampleIndicators" class="carousel slide col-6" data-bs-ride="true">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="../imagenes/buzo araña negro.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="../imagenes/buzo america.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="../imagenes/buzo araña rojo capucha.jpg" class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
 
     
-    <div id="carouselExampleIndicators" class="carousel slide col-6" data-bs-ride="true">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
+        <p>Nuestros productos</p>
+    <p  id="conMascara">Con mascara</p>
+  <div class="row">
+    <div id="carouselMascaraBuzo" class="carousel slide col-4 " data-bs-ride="true">
+      
+      <div class="carousel-controls">
+       <div class="carousel-indicators">
+         <button type="button" data-bs-target="#carouselMascaraBuzo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+         <button type="button" data-bs-target="#carouselMascaraBuzo" data-bs-slide-to="1" class="color-azul"  aria-label="Slide 2"></button>
+         <button type="button" data-bs-target="#carouselMascaraBuzo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+       </div>
+
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselMascaraBuzo" data-bs-slide="prev">
+          <span  aria-hidden="true">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+          </span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselMascaraBuzo" data-bs-slide="next">
+          <span aria-hidden="true"><i class="fa-solid fa-circle-chevron-right"></i></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      
+      </div> 
+
       <div class="carousel-inner">
         <div class="carousel-item active">
+          <img src="../imagenes/buzo araña rojo.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
           <img src="../imagenes/buzo araña negro.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
           <img src="../imagenes/buzo america.jpg" class="d-block w-100" alt="...">
         </div>
+      </div>
+      
+    </div>
+
+    <div id="carouselMascaraRemera" class="carousel slide col-4 " data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselMascaraRemera" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselMascaraRemera" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselMascaraRemera" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../imagenes/remera-araña.jpeg" class="d-block w-100" alt="...">
+        </div>
         <div class="carousel-item">
-          <img src="../imagenes/buzo araña rojo capucha.jpg" class="d-block w-100" alt="...">
+          <img src="../imagenes/remera-arañanegra.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../imagenes/remera-calavera.jpeg" class="d-block w-100" alt="...">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselMascaraRemera" data-bs-slide="prev">
+        <span  aria-hidden="true"><i class="fa-solid fa-circle-chevron-left"></i> </span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselMascaraRemera" data-bs-slide="next">
+        <span aria-hidden="true"><i class="fa-solid fa-circle-chevron-right"></i></span>
         <span class="visually-hidden">Next</span>
       </button>
-    </div>
-  </div>
-    <p>Buzos con capucha</p>
-    <section id="buzo.con.capucha" class="grid__buzosConCapucha"><img src="../imagenes/buzo araña Azul capucha.jpg" alt=""><img src="../imagenes/buzo araña gris capucha.jpg" alt=""><img src="../imagenes/buzo araña rojo capucha.jpg" alt=""></section>
-    <p>Buzos cuello redondo</p>
-    <section id="buzo.cuello.redondo" class="grid__buzosCuelloRedondo"><img src="../imagenes/Buzo dino.jpg" alt=""><img src="../imagenes/Buzo dino rojo.jpg" alt=""><img src="../imagenes/Buzo dino melange.jpg" alt=""></section>
-    <p>Camperas</p>
-    <section id="camperas.personajes" class="grid__camperas"><img src="../imagenes/campera.frente.jpg" alt=""><img src="../imagenes/campera batman negro.jpg" alt=""><img src="../imagenes/campera batman topo.jpg" alt=""></section>
-    <p>Camisetas</p>
-    <section  id="camisetas.personajes" class="grid__camisetas"><img src="../imagenes/camiseta.roja.jpg" alt=""><img src="../imagenes/camiseta blanca.jpg" alt=""><img src="../imagenes/camiseta gris.jpg" alt=""></section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-</body>
-<p>Donde encontrarnos</p>
-<footer id="informacion.importante"> <a href="https://www.instagram.com/tusuperheroe.oficial/"><img src="../imagenes/Instagram_logo.webp" alt=""></a>
-    <a href="https://wa.me/c/5491151411081"><img src="../imagenes/WhatsApp.logo.png" alt=""></a>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.0254129924506!2d-58.479315084838674!3d-34.62879808045286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9923538a277%3A0x784aa78ee8246c8!2sConcordia%20321%2C%20C1407%20DIE%2C%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1656973739814!5m2!1sen!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </footer>
 
-  </html>git 
+    </div>
+
+
+    <div id="carouselMascaraCamiseta" class="carousel slide col-4" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselMascaraCamiseta" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselMascaraCamiseta" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselMascaraCamiseta" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="../imagenes/camiseta-araña.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../imagenes/camiseta-arañanegra.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="../imagenes/camiseta-capitan.jpeg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselMascaraCamiseta" data-bs-slide="prev">
+        <span  aria-hidden="true"><i class="fa-solid fa-circle-chevron-left"></i> </span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselMascaraCamiseta" data-bs-slide="next">
+        <span aria-hidden="true"><i class="fa-solid fa-circle-chevron-right"></i></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+
+  </div>
+    <p  id="buzos">Buzos</p>
+    <div class="row">
+      <div id="carouselBuzoCapucha" class="carousel slide col-4" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselBuzoCapucha" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselBuzoCapucha" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselBuzoCapucha" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../imagenes/buzo araña capucha.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenes/buzo araña Azul capucha.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenes/buzo araña rojo capucha.jpg" class="d-block w-100" alt="...">  
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBuzoCapucha" data-bs-slide="prev">
+          <span  aria-hidden="true"><i class="fa-solid fa-circle-chevron-left"></i> </span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselBuzoCapucha" data-bs-slide="next">
+          <span aria-hidden="true"><i class="fa-solid fa-circle-chevron-right"></i></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <div id="carouselBuzoDino" class="carousel slide col-4 " data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselBuzoDino" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselBuzoDino" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselBuzoDino" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../imagenes/Buzo dino.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenes/Buzo dino rojo.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenes/Buzo dino negro.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBuzoDino" data-bs-slide="prev">
+          <span  aria-hidden="true">
+            <i class="fa-solid fa-circle-chevron-left"></i>
+          </span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselBuzoDino" data-bs-slide="next">
+          <span aria-hidden="true"><i class="fa-solid fa-circle-chevron-right"></i></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <div id="carouselBuzoAraña" class="carousel slide col-4 " data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselBuzoAraña" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselBuzoAraña" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselBuzoAraña" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../imagenes/buzoa-central.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenes/buzoa-azul.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenes/buzoa-rojo.jpeg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselBuzoAraña" data-bs-slide="prev">
+          <span  aria-hidden="true"><i class="fa-solid fa-circle-chevron-left"></i> </span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselBuzoAraña" data-bs-slide="next">
+          <span aria-hidden="true"><i class="fa-solid fa-circle-chevron-right"></i></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+
+    <p id="remeraPersonajes">Remeras</p>
+    <div class="row" >
+      <div id="carouselDino" class="carousel slide col-4" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselDino" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselDino" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselDino" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../imagenes/dino-central.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenes/dino-blanco.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenes/dino-negro.jpeg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselDino" data-bs-slide="prev">
+          <span  aria-hidden="true"><i class="fa-solid fa-circle-chevron-left"></i> </span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselDino" data-bs-slide="next">
+          <span aria-hidden="true"><i class="fa-solid fa-circle-chevron-right"></i></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <div id="carouselNaruto" class="carousel slide col-4 " data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselNaruto" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselNaruto" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselNaruto" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../imagenes/naruto-central.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenes/naruto-naranja.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenes/naruto-naegro.jpeg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselNaruto" data-bs-slide="prev">
+          <span  aria-hidden="true"><i class="fa-solid fa-circle-chevron-left"></i> </span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselNaruto" data-bs-slide="next">
+          <span aria-hidden="true"><i class="fa-solid fa-circle-chevron-right"></i></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <div id="carouselAraña" class="carousel slide col-4 " data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselAraña" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselAraña" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselAraña" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../imagenes/remera araña central cr.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenes/remers araña azul cr.jpeg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../imagenes/remera araña rojo cr.jpeg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselAraña" data-bs-slide="prev">
+          <span  aria-hidden="true"><i class="fa-solid fa-circle-chevron-left"></i> </span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselAraña" data-bs-slide="next">
+          <span aria-hidden="true"><i class="fa-solid fa-circle-chevron-right"></i></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+<footer id="informacion.importante">
+  <p >Donde encontrarnos</p>
+  <li class="d-flex justify-content-around py-3">
+      <a href="https://www.instagram.com/tusuperheroe.oficial/"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://wa.me/c/5491151411081"><i class="fa-brands fa-whatsapp"></i></a>
+      <a href=""><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://goo.gl/maps/5xZtwpLKd8pephws5"><i class="fa-solid fa-map-location"></i></a>
+  </li>
+  
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/0a55ef6681.js" crossorigin="anonymous"></script>
+</body>
+
+
+  </html>
